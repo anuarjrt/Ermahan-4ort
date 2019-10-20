@@ -226,18 +226,18 @@
  			</h2>
  			<p>Оставьте заявку, мы перезвоним <br>и проконсультируем по всем вопросам.</p>
  			<p>Будем рады сотрудничеству</p>
- 			<form class="col-sm-12 col-md-9 col-xl-4">
+ 			<form class="col-sm-12 col-md-9 col-xl-4" method="post" action="mail.php">
  				<div>
- 				<input type="text" name="tex" placeholder="Ваше имя * ">
+ 				<input type="text" name="tex" placeholder="Ваше имя * " required="required">
  				</div>
  				<div>
- 				<input type="email" name="email" placeholder="Email *Телефон *">
+ 				<input type="email" name="email" id="email-mwform" placeholder="Email" required>
  				</div>
  				<div>
- 				<input type="tel" name="phone" placeholder="Телефон *">
+ 				<input type="tel" name="phone" id="phone-mwform" placeholder="Телефон *" required>
  				</div>
  				<div>
- 				<textarea rows="1" placeholder="Чем мы можем Вам помочь?"></textarea>
+ 				<textarea rows="1" placeholder="Чем мы можем Вам помочь?" required="required"></textarea>
  				</div>
  				<button type="submit" id="form">ОТПРАВИТЬ ЗАЯВКУ</button>
  			</form>
